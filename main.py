@@ -95,6 +95,8 @@ print('Texmini View',pred)
 X_values = df[['Likes', 'Comments']]
 y_pred_all = model.predict(X_values)
 r2 = r2_score(y, y_pred_all)
-print('R2 Score:', r2)
+mae = mean_absolute_error(y, y_pred_all)
+mse = mean_squared_error(y, y_pred_all)
+print(f'R2 Score: {r2}, mae: {mae}, mse: {mse}')
 #multi linear daha yuksek dogrulugla isleyi(linearla muqayisede)
 #r2 score 99% ideal isleyir
