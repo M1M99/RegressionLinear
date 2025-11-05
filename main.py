@@ -8,6 +8,7 @@ from sklearn.linear_model import LinearRegression
 # #
 # # a = np.cov(area,price,bias=True)[0,1]/np.var(area)
 # # b = np.mean(price)-a*np.mean(area)
+
 # # print(a)
 # #
 # # print(b)
